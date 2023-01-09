@@ -1,0 +1,12 @@
+pages:
+  stage: deploy
+  script:
+    - mkdir .docs/.vuepress/dist
+    - cp -r ./* .docs/.vuepress/dist
+    - rm -rf .docs/.vuepress/dist
+    - mv .docs/.vuepress/dist .docs/.vuepress/dist
+  artifacts:
+    paths:
+      - .docs/.vuepress/dist
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

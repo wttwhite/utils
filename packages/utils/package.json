@@ -1,0 +1,27 @@
+{
+  "name": "hsja-utils",
+  "version": "0.3.0",
+  "description": "> TODO: description",
+  "author": "wtt",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.esm.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "peerDependencies": {
+    "jszip": "^3.10.1"
+  }
+}
