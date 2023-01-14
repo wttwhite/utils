@@ -2,7 +2,7 @@
 
 下载依赖
 
-`npm i hsja-utils `
+`npm i custom-utils `
 
 ## 压缩图片
 
@@ -35,7 +35,7 @@
 - @return{file} 返回文件
 
 ```javascript
-import { compressImg } from 'hsja-utils'
+import { compressImg } from 'custom-utils'
 async handleChange(file) {
       console.log('file', file) // 当前文件size大小：1609194
       const afterFile = await compressImg(file.raw)
@@ -60,7 +60,7 @@ async handleChange(file) {
 - @return{object} 返回
 
 ```javascript
-import { decompression } from 'hsja-utils'
+import { decompression } from 'custom-utils'
 // 获取zip包数据，得到码流，业务自己调接口
 const file = await axios.get('/test-zip.zip', { responseType: 'blob' })
 console.log('file', file)
@@ -78,7 +78,7 @@ console.log('decompression', files)
 
 ```javascript
 // 接口中记得加responseType: 'blob'
-import { downloadFile } from 'hsja-utils'
+import { downloadFile } from 'custom-utils'
 downloadFile(res, fileName)
 downloadFile(res) // 不传fileName，默认使用后端headers中给的filename的值
 ```
@@ -90,7 +90,7 @@ downloadFile(res) // 不传fileName，默认使用后端headers中给的filename
 **注：**按钮不能使用a标签，使用button按钮要阻止按钮的默认行为
 
 ```javascript
-import { downloadFileByUrl } from 'hsja-utils'
+import { downloadFileByUrl } from 'custom-utils'
 downloadFileByUrl(str, fileName)
 // downloadFileByUrl(`${ViteApiUrl}/shouye-ppt.pptx`, '住建局ppt.pptx')
 ```

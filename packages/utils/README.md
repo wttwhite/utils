@@ -5,6 +5,6 @@
 ## Usage
 
 ```
-npm i hsja-utils -D
-imgport { xxx } from 'hsja-utils'
+npm i custom-utils -D
+imgport { xxx } from 'custom-utils'
 ```

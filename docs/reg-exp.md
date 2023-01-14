@@ -1,7 +1,7 @@
 # 正则
 
 ```javascript
-import { regExp } from 'hsja-utils'
+import { regExp } from 'custom-utils'
 regExp.number.test('啊啊啊') // false
 regExp.number.test(123456) // true
 regExp.number // /^\d*$/   输出对应变量的正则

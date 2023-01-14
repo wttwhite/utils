@@ -1,7 +1,7 @@
 # 天气
 
 ```javascript
-import { getWeather } from 'hsja-utils'
+import { getWeather } from 'custom-utils'
 await getWeather()
 ```
 

@@ -2,7 +2,7 @@
 
 下载依赖
 
-`npm i hsja-utils -D`
+`npm i custom-utils -D`
 
 ## debounce防抖
 
@@ -11,7 +11,7 @@
 - @param{Boolean} immediate 是否立即执行，默认false
 
 ```javascript
-import { debounce } from 'hsja-utils'
+import { debounce } from 'custom-utils'
 // 第一种方式
 this.getDateList = debounce (this.getDateList, 5000)
 // 第二种方式
@@ -25,7 +25,7 @@ getDateList: debounce (async function (page) {...}, 5000)
 - @param{Object} opts 配置项，默认{ noStart:false, noEnd:false }
 
 ```javascript
-import { throttle } from 'hsja-utils'
+import { throttle } from 'custom-utils'
 // 第一种方式
 this.getDateList = throttle(this.getDateList, 5000)
 // 第二种方式
@@ -39,7 +39,7 @@ getDateList: throttle(async function (page) {...}, 5000)
 @return{String}  ip+port
 
 ```javascript
-import { getOrigin } from 'hsja-utils'
+import { getOrigin } from 'custom-utils'
 getOrigin() // http://192.168.2.113:8081
 ```
 
@@ -55,7 +55,7 @@ getOrigin() // http://192.168.2.113:8081
 @return 处理之后的字符串
 
 ```javascript
-import { hideSensitiveText } from 'hsja-utils'
+import { hideSensitiveText } from 'custom-utils'
 hideSensitiveText('330480184578523698', 5, 14)  // 3304**********3698
 ```
 
@@ -65,6 +65,6 @@ hideSensitiveText('330480184578523698', 5, 14)  // 3304**********3698
 * @return{Boolean} 校验是否通过 false/true
 
 ```javascript
-import { checkIDStrict } from 'hsja-utils'
+import { checkIDStrict } from 'custom-utils'
 checkIDStrict('330480182512124755')  // false
 ```
